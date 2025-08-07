@@ -1,78 +1,59 @@
 import { StyleSheet } from 'react-native';
 
-export const styles = StyleSheet.create({
-
+export const styles = StyleSheet.create({     
   container: {
     flex: 1,
-    backgroundColor: '#f0f4f8',
-    paddingHorizontal: 20,
-    paddingVertical: 20,
+    backgroundColor: '#33badfff',
+    alignItems: 'center',
     justifyContent: 'center',
-  },
-
-
+    padding: 20,
+  },       
   title: {
-    fontSize: 36,
-    textAlign: 'center',
-    color: '#1e293b',
+    fontSize: 35,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 50,
+    color: 'black',
   },
-  img: {
-    width: 200,
-    height: 200,
-    resizeMode: 'contain',
-    alignSelf: 'center',
-    marginBottom: 20,
-  },
-  button: {
-    backgroundColor: '#2563eb',
-    borderRadius: 8,
-    paddingVertical: 12,
-    paddingHorizontal: 24,
-    alignSelf: 'center',
-    marginTop: 20,
-  },
-  Text: {
-    color: '#09f7e3ff',
-    fontSize: 30,
-    textAlign: 'center',
-    fontWeight: 'bold',
-  },
-
-  
+  inputContainer: {
+    width: '100%',
+    marginBottom: 15,
+  },                  
   label: {
-    fontSize: 18,
-    color: '#1e293b',
-    marginBottom: 8,
-    fontWeight: '500',
+    fontSize: 16,
+    marginBottom: 5,
+    color: 'black',
   },
   input: {
     borderWidth: 1,
-    borderColor: '#cbd5e1',
-    borderRadius: 8,
+    borderColor: '#f1f4f5',
     padding: 10,
-    fontSize: 16,
-    backgroundColor: '#ffffff',
-    color: '#111827',
-    marginBottom: 20,
+    borderRadius: 8,
+    backgroundColor: '#f1f4f5',
+    width: '100%',
+  },
+  button: {
+    backgroundColor: '#c94545ff',
+    paddingVertical: 12,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+    marginTop: 20,
+  },
+  text: {
+    color: 'black',
+    fontSize: 20,
+    fontWeight: '600',
+    textAlign: 'center',    
   },
   result: {
-    fontSize: 24,
-    color: '#10b981',
+    marginTop: 20,
+    fontSize: 18,
+    color: 'black',
     fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: 30,
   },
-   inputDiv: {
-    borderWidth: 1,
-    borderColor: '#cbd5e1',
-    borderRadius: 8,
-    padding: 10,
-    fontSize: 16,
-    backgroundColor: '#ffffff',
-    color: '#111827',
-    marginBottom: 20,
+  img: {
+    width: 150,
+    height: 150,
+    marginBottom: 30,
+    borderRadius: 75,
   },
-
-});
+});       

@@ -1,23 +1,22 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image } from 'react-native';
+import { styles } from '../theme/appTheme';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../App';
-import { styles } from '../theme/appTheme';
+import { CustomButton } from '../components/CustomBotton';
 
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Bienvenido'>;
 
-export default function Screen1({ navigation }: Props) {
+export const Screen1 = ({ navigation }: Props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bienvenido</Text>
       <Image
-        source={{ uri: '}' }}
+        source={{ uri: 'https://i.ibb.co/LDcBV48h/Whats-App-Image-2025-08-07-at-3-31-55-PM.jpg' }}
         style={styles.img}
       />
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('División')}>
-        <Text style={styles.Text}>Acceder</Text>
-      </TouchableOpacity>
+      <CustomButton title="Acceder" onPress={() => navigation.navigate('División')} />
     </View>
   );
-}
+};
